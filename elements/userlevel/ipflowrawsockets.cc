@@ -32,6 +32,7 @@
 #include <sys/ioctl.h>
 #include <arpa/inet.h>
 #include <sys/ioctl.h>
+#include <linux/sockios.h>
 
 #include <click/straccum.hh>
 
