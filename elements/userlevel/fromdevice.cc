@@ -27,6 +27,7 @@
 # include <sys/ioctl.h>
 #else
 # include <sys/ioccom.h>
+#include <linux/sockios.h>
 #endif
 #if HAVE_NET_BPF_H
 # include <net/bpf.h>
@@ -52,6 +53,8 @@
 # include <linux/if_packet.h>
 # include <net/ethernet.h>
 #endif
+
+#ifdef
 
 CLICK_DECLS
 
