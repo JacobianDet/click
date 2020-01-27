@@ -28,8 +28,7 @@
 #else
 # include <sys/ioccom.h>
 #endif
-#if HAVE_NET_BPF_H#include <linux/sockios.h>
-
+#if HAVE_NET_BPF_H
 # include <net/bpf.h>
 # define PCAP_DONT_INCLUDE_PCAP_BPF_H 1
 #endif
