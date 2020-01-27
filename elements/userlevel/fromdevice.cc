@@ -27,9 +27,9 @@
 # include <sys/ioctl.h>
 #else
 # include <sys/ioccom.h>
-#include <linux/sockios.h>
 #endif
-#if HAVE_NET_BPF_H
+#if HAVE_NET_BPF_H#include <linux/sockios.h>
+
 # include <net/bpf.h>
 # define PCAP_DONT_INCLUDE_PCAP_BPF_H 1
 #endif
@@ -45,6 +45,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include "fakepcap.hh"
+#include <linux/sockios.h>
 
 #if FROMDEVICE_ALLOW_LINUX
 # include <sys/socket.h>
@@ -53,8 +54,6 @@
 # include <linux/if_packet.h>
 # include <net/ethernet.h>
 #endif
-
-#ifdef
 
 CLICK_DECLS
 
